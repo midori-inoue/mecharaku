@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url("base.css");
+/*共通設定-------------------------------------------------------------------------------------------------------------------------------------*/
+/*基本設定*/
+h1 {
+  font-size: 250%;
+  color: #e51373;
+  border-bottom: 1px solid #333; }
+
+#rules {
+  width: 100%;
+  margin: 1em 0 0; }
+  #rules section h2 {
+    margin: 2em 0 0.5em;
+    font-size: 156%;
+    border-bottom: 1px dotted #ccc; }
+  #rules section p a {
+    color: #0082e8;
+    text-decoration: none; }
+    #rules section p a:hover, #rules section p a:active {
+      color: #0082e8;
+      text-decoration: underline; }
+  #rules .tar {
+    margin: 2em 0 0;
+    text-align: right; }
+
+/*共通設定ここまで-------------------------------------------------------------------------------------------------------------------------------------*/
+/* pc */
+@media screen and (min-width: 1300px) {
+  /*メイン*/ }
+/* tablet以下共通 ------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1299px) {
+  /*メイン*/ }
+/* tablet以下共通ここまで ------------------------------------------------------------------------------------------*/
+/* tablet1 */
+@media only screen and (min-width: 1024px) and (max-width: 1299px) {
+  /*メイン*/ }
+/* tablet2  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /*基本設定*/
+  /*メイン*/ }
+/* tablet3  */
+@media only screen and (max-width: 767px) {
+  /*基本設定*/
+  /*メイン*/
+  h1 {
+    font-size: 187%; } }
+/* smartPhone1 */
+@media only screen and (max-width: 499px) {
+  /*基本設定*/
+  /*メイン*/ }

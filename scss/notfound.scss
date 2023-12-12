@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import url("base.css");
+@import url("../dont_know_form/mfp.statics/mailformpro.css");
+
+
+
+/*共通設定-------------------------------------------------------------------------------------------------------------------------------------*/
+/*基本設定*/
+h1{ 
+    font-size: 250%;
+    color: #e51373;
+    border-bottom: 1px solid #333;
+}
+.dont_know_b{
+    margin: 1em 0;
+}
+#notfound{
+    width: 100%;
+	margin: 3em 0 0;
+	& p{
+		text-align: center;
+		margin: 0 0 1em;
+	}
+    & h2{
+    color: #808080;
+    font-size: 187%;
+        border-bottom: 1px dotted #ccc;
+    margin: 0 0 1em;
+    }
+	& #thanks{
+		text-align: center;
+			& .btn a{
+				background-color: #0082e8;
+				color: #fff;
+				text-decoration: none;
+				font-weight: bold;
+				display: block;
+				width: 250px;
+				padding: 1em 0;
+				text-align: center;
+				margin: 2em auto 0;
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				transition: all  0.3s ease;
+				&:hover,&:active{
+					background-color: #28A0FF;
+					text-decoration: none;
+				}
+			}
+		
+	}
+}
+
+/*共通設定ここまで-------------------------------------------------------------------------------------------------------------------------------------*/
+/* pc */
+@media screen and (min-width: 1300px)  {
+
+/*メイン*/
+
+}
+
+/* tablet以下共通 ------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1299px)  {
+	
+/*メイン*/
+
+}
+/* tablet以下共通ここまで ------------------------------------------------------------------------------------------*/
+
+/* tablet1 */
+@media only screen and (min-width: 1024px) and (max-width: 1299px)  {
+
+/*メイン*/
+
+}
+
+/* tablet2  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+/*基本設定*/
+/*メイン*/
+
+}
+
+/* tablet3  */
+@media only screen and (max-width: 767px) {
+
+/*基本設定*/
+/*メイン*/
+h1{ 
+    font-size: 187%;
+    }
+
+}
+
+/* smartPhone1 */
+@media only screen and (max-width: 499px) {
+/*基本設定*/
+/*メイン*/
+
+}
+

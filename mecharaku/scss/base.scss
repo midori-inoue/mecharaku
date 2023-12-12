@@ -1,0 +1,525 @@
+@charset "utf-8";
+@import url("reset.css");
+@import url("m_menu.css");
+
+
+/*共通設定-------------------------------------------------------------------------------------------------------------------------------------*/
+/*基本設定*/
+html{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height:1.5;
+    color: #333;
+	}
+main {
+    display: block;
+}
+header a img,main a img,footer a img{
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+header a:hover img,main a:hover img,footer a:hover img {
+opacity: 0.8;
+filter: alpha(opacity=80);
+-moz-opacity:0.8;
+}
+.fade{
+  /*margin-top: 10vh;*/
+  opacity : 0;
+  transition: opacity 2s;
+}
+ 
+.fade.view{
+  opacity: 1;
+}
+
+/*ヘッダー*/
+header{
+	width: 100%;
+	background-color: white;
+	& #header_inner{
+		display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-between;
+		margin: 0 auto;
+        height: 100px;
+		& #top_logo{
+			width: calc(100% - 400px);
+            display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content:space-between;
+            & #logo{
+                width: 281px;
+            }
+            & .t_center{
+                width: calc(100% - 290px);
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content:space-between;
+                & figure{
+                    width: 48%;
+                    & figcaption{
+                        text-align: center;
+                        font-size: 75%;
+                        margin: 0.5em 0 0;
+                    }
+                }
+                }
+		}
+		& #top_tel{
+            width: 370px;
+            & p{
+                width: 345px;
+                margin: 0 0 0 25px;
+                text-align: right;
+            }
+            & ul{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:space-between;
+                margin: 0;
+                & li{
+                    width: 180px;
+                    & a{
+                        display: block;
+                        width: 100%;
+                        background-color: #1eaa39;
+                        padding: 0.25em 1%;
+                        color: #fff;
+                        text-align: center;
+                        text-decoration:none; 
+                        border-radius: 5px;
+                        &:hover,&:active{
+                            background-color: #25D346;
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                        & svg{
+                            vertical-align: middle;
+                            margin: 0 0.1em 0 0;
+                        }
+                    }
+                }
+            }
+		}
+	}
+    & #menuList{
+        width: 100%;
+        background-color: #0082e8;
+    }
+}
+/*メイン*/
+#wrap{
+	margin: 0 auto;
+	display: flex;
+    flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content:space-between; 
+	& #contents{
+		width: 78%;
+		margin: 1.5em 0 0 ;
+	
+	}   
+}
+
+/*フッター*/
+footer{
+	margin: 8em 0 0;
+    background-color: #ccc;
+    padding: 2em 0;
+    color: #333;
+     & a{
+         color: #333;
+         text-decoration: none;
+         &:hover,&:active{
+             color: #0082e8;
+             text-decoration: none;
+         }
+    }
+    & #footer_inner{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-between;
+        & dl{
+            width: 278px;
+            & dt{
+                width: 100%;
+                margin: 0 0 1em;
+            }
+            & dd{
+                width: 100%;
+            }
+        }
+        & nav{
+            width: calc(100% - 300px);
+            & #f_menu01{
+                width: 100%;
+                 display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                padding: 0 0 2em;
+                & li{
+                   padding: 0 2%;
+                   margin: 0.5em 0 0;
+                }
+                border-bottom: 1px solid #fff;
+            }& #f_menu02{
+                width: 100%;
+                 display: flex;
+                flex-wrap: wrap;
+                & li{
+                   padding: 0 2%;
+                    margin: 1em 0 0;
+                    border-right: 1px solid #333;
+                    &:last-child{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+	& address{
+		width: 96%;
+		text-align: center;
+		font-size: 87.5%;
+		font-style: normal;
+		padding: 0 2%;
+		margin: 5em 0 0;
+	}
+}
+
+/*TOPへ戻るボタン設定*/
+#page-top {
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	font-size: 90%;
+	z-index: 999;
+	font-family: "M PLUS Rounded 1c";
+	font-weight: bold;
+	& a {
+		display: block;
+	text-decoration:none;
+	color: #fff;
+	text-align: center;
+	width: 100px;
+		background-color: #0082e8;
+	padding: 0.5em 0;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+	& a:hover,& a:active {
+		opacity: 0.7;
+		filter: alpha(opacity=70);
+		-moz-opacity:0.7;
+}
+}
+
+	
+		
+
+/*共通設定ここまで-------------------------------------------------------------------------------------------------------------------------------------*/
+/* pc */
+@media screen and (min-width: 1300px)  {
+
+/*ヘッダー*/
+#header_inner{
+	width:1280px;
+}
+	
+/*メイン*/
+.m_sp{
+	display: none;
+	}
+#wrap{
+		width: 1280px;
+}
+
+/*フッター*/
+footer{
+    & #footer_inner{
+        width: 1280px;
+        & nav{
+            & #f_menu01{
+                justify-content:space-between;
+            }
+        }
+    }
+}
+}
+
+/* tablet以下共通 ------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1299px)  {
+	
+/*ヘッダー*/
+#header_inner{
+	width: 96%;
+}
+	
+/*メイン*/
+#wrap{
+		width: 96%;
+}
+
+/*フッター*/
+#footer_inner{
+        width: 96%;
+    }
+}
+/* tablet以下共通ここまで ------------------------------------------------------------------------------------------*/
+
+/* tablet1 */
+@media only screen and (min-width: 1024px) and (max-width: 1299px)  {
+
+/*基本設定*/
+html{
+	font-size: 16px;
+	}
+
+/*ヘッダー*/
+header{
+	& #header_inner{
+		& #top_logo{
+			width: calc(100% - 400px);
+            display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content:space-between;
+            & #logo{
+                width: 281px;
+            }
+            & .t_center{
+                width: calc(100% - 290px);
+                flex-direction: column;
+                & figure{
+                    width: 100%;
+                    &:nth-child(1) img{
+                        display: block;
+                        margin:  0 auto;
+                        width: 180px;
+                    }
+                     &:nth-child(2) img{
+                         display: block;
+                        margin:  0 auto;
+                        width: 275px;
+                    }
+                    & figcaption{
+                        text-align: center;
+                        font-size: 75%;
+                        margin: 0.25em 0 0;
+                    }
+                }
+                }
+		}
+	}
+    & #menuList{
+        width: 100%;
+        background-color: #0082e8;
+    }
+}
+/*メイン*/
+.m_sp{
+		display: none;
+	}
+#wrap{
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;     
+}
+
+/*フッター*/
+}
+
+/* tablet2  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+/*基本設定*/
+html{
+	font-size: 85%;
+	}
+	
+/*ヘッダー*/
+header{
+	& #header_inner{
+        height: 100px;
+		& #top_logo{
+			width: 30%;
+            flex-direction: column;
+            & #logo{
+                width: 100%;
+            }
+            & .t_center{
+                display: none;
+                }
+		}
+		& #top_tel{
+            width: 48%;
+            & p{
+                width: 100%;
+                margin: 0;
+            }
+            & ul{
+                & li{
+                    width: 49%;
+                }
+            }
+		}
+	}
+}
+
+/*メイン*/
+.m_pc{
+		display: none;
+	}
+#wrap{
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;    
+	& #contents{
+		width: 75%;
+		margin: 1.5% 2% 0 ;
+    }   
+}
+/*フッター*/
+}
+
+/* tablet3  */
+@media only screen and (max-width: 767px) {
+
+/*基本設定*/
+html{
+	font-size: 85%;
+	}
+
+/*ヘッダー*/
+.m_pc{
+	display: none;
+}
+header{
+	& #header_inner{
+        height: auto;
+        margin: 8px auto 1em;
+        flex-direction: column;
+		& #top_logo{
+			width: 100%;
+            flex-direction: column;
+            & #logo{
+                width: 281px;
+            }
+             & .t_center{
+                display: none;
+                }
+		}
+		& #top_tel{
+            width: 100%;
+            & p{
+                width: 100%;
+                margin: 0;
+            }
+            & ul{
+                & li{
+                    width: 49%;
+                }
+            }
+		}
+	}
+}
+
+/*メイン*/
+#wrap{
+	width: 95%;
+	margin: 2 auto;
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content:space-between; 
+	flex-direction: column;
+	& #contents{
+		width: 80%;
+		margin: 5% auto;
+	}   
+}
+	
+/*フッター*/
+footer{
+	margin: 4em 0 0;
+    padding: 1em 0;
+    & #footer_inner{
+        flex-direction: column;
+        & dl{
+            width: 80%;
+            margin: 0 auto 1em;
+        }
+        & nav{
+            width: 100%;
+            & #f_menu01{
+                & li{
+                   padding: 0 2%;
+                   margin: 0.5em 0 0;
+                }
+                border-bottom: 1px solid #fff;
+            }& #f_menu02{
+                width: 100%;
+                 display: flex;
+                flex-wrap: wrap;
+                & li{
+                   padding: 0 2%;
+                    margin: 1em 0 0;
+                    border-right: 1px solid #333;
+                    &:last-child{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+	& address{
+		width: 96%;
+		text-align: center;
+		font-size: 87.5%;
+		font-style: normal;
+		padding: 0 2%;
+		margin: 5em 0 0;
+	}
+}
+
+	}
+
+/* smartPhone1 */
+@media only screen and (max-width: 499px) {
+/*基本設定*/
+html{
+	font-size: 80%;
+	}
+	
+/*ヘッダー*/
+
+
+/*メイン*/
+#wrap{
+	width: 96%;
+	margin: 2 auto;
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content:space-between; 
+	flex-direction: column;
+	& #contents{
+		width: 96%;
+		margin: 5% auto;
+	
+	}   
+}
+
+/*フッター*/
+
+}

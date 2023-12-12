@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import url("base.css");
+/*共通設定-------------------------------------------------------------------------------------------------------------------------------------*/
+/*基本設定*/
+/*ヘッダー*/
+/*メイン*/
+h1 {
+  font-size: 250%;
+  color: #e51373;
+  border-bottom: 1px solid #333; }
+
+#main {
+  margin: 2% auto 10%; }
+
+h2 {
+  font-size: 150%;
+  width: 85%;
+  color: #e51373;
+  border-bottom: 1px solid #333; }
+
+.course-menu {
+  width: 85%;
+  margin: 3% 30% 5% 0;
+  border-bottom: dotted #000 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .course-menu .course-name {
+    width: 49%;
+    margin: 0 20% 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .course-menu .course-name figure {
+      width: 10%;
+      margin: 2% 0 0 0; }
+    .course-menu .course-name .course-nameinner {
+      width: 60%;
+      margin: 0 20% 0 0; }
+      .course-menu .course-name .course-nameinner h3 {
+        margin: 0 auto;
+        font-size: 150%;
+        font-weight: bold; }
+      .course-menu .course-name .course-nameinner .size {
+        font-size: 60%;
+        color: #888888; }
+  .course-menu .order {
+    width: 10%;
+    color: #fff;
+    margin: 0 10% 2% 2%;
+    padding: 0.5% 2%;
+    text-align: center;
+    background-color: #1EAA39; }
+    .course-menu .order:hover, .course-menu .order:active {
+      color: #fff;
+      text-decoration: none;
+      background-color: #003701; }
+    .course-menu .order a {
+      color: #fff;
+      text-decoration: none;
+      display: block; }
+
+/*フッター*/
+/*共通設定ここまで-------------------------------------------------------------------------------------------------------------------------------------*/
+/* pc */
+@media screen and (min-width: 1300px) {
+  /*ヘッダー*/
+  /*メイン*/
+  /*フッター*/ }
+/* tablet以下共通 ------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1299px) {
+  /*ヘッダー*/
+  /*メイン*/
+  /*フッター*/ }
+/* tablet以下共通ここまで ------------------------------------------------------------------------------------------*/
+/* sp以下共通 ------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  /*ヘッダー*/
+  /*メイン*/
+  /*フッター*/ }
+/* sp以下共通ここまで ------------------------------------------------------------------------------------------*/
+/* tablet1 */
+@media only screen and (min-width: 1024px) and (max-width: 1299px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  #main {
+    margin: 2% auto 10%; }
+
+  .course-menu .course-name figure {
+    margin: 0 0 0 0; }
+  .course-menu .course-name .course-nameinner h3 {
+    font-size: 100%; }
+  .course-menu .course-name .course-nameinner .size {
+    font-size: 50%; }
+  .course-menu .order {
+    font-size: 70%; }
+
+  /*フッター*/ }
+/* tablet2  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  #main {
+    margin: 2% auto 10%; }
+
+  .course-menu .course-name .course-nameinner h3 {
+    font-size: 90%; }
+  .course-menu .course-name .course-nameinner .size {
+    font-size: 40%; }
+  .course-menu .order {
+    text-align: center;
+    font-size: 70%; }
+
+  /*フッター*/ }
+/* tablet3  */
+@media only screen and (max-width: 767px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  h1 {
+    font-size: 187%; }
+
+  #main {
+    margin: 2% auto; }
+
+  .course-menu {
+    margin: 5% 20% 5% 0;
+    font-size: 90%; }
+    .course-menu .course-name {
+      width: 40%;
+      margin: 0 20% 0 5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .course-menu .course-name figure {
+        width: 15%;
+        margin: 2% 2% 2% 0; }
+      .course-menu .course-name .course-nameinner h3 {
+        width: 80%;
+        margin: 0 2% 2% 0;
+        font-size: 120%; }
+      .course-menu .course-name .course-nameinner .size {
+        font-size: 25%; }
+    .course-menu .order {
+      width: 20%;
+      margin: 0 0 2% 2%;
+      padding: 1% 0 0 0; }
+
+  /*フッター*/ }
+/* smartPhone1 */
+@media only screen and (max-width: 499px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  h1 {
+    font-size: 280%;
+    line-height: 100%; }
+
+  #main {
+    margin: 3% auto; }
+
+  .course-menu .course-name {
+    width: 49%; }
+    .course-menu .course-name figure {
+      margin: 2% 2% 2% 0; }
+    .course-menu .course-name .course-nameinner {
+      width: 60%; }
+      .course-menu .course-name .course-nameinner h3 {
+        font-size: 120%; }
+      .course-menu .course-name .course-nameinner .size {
+        font-size: 60%; }
+  .course-menu .order {
+    width: 20%;
+    color: #fff;
+    font-size: 100%;
+    padding: 2% 0 0 0; }
+
+  /*フッター*/ }

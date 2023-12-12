@@ -1,0 +1,1171 @@
+@charset "utf-8";
+@import url("reset.css");
+@import url("m_menu.css");
+@import url("swiper-bundle.min.css");
+
+
+/*共通設定-------------------------------------------------------------------------------------------------------------------------------------*/
+/*基本設定*/
+html{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height:1.5;
+    color: #333;
+	}
+main {
+    display: block;
+}
+header a img,main a img,footer a img{
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+} 
+header a:hover img,main a:hover img,footer a:hover img {
+opacity: 0.8;
+filter: alpha(opacity=80);
+-moz-opacity:0.8;
+}
+.fade{
+  /*margin-top: 10vh;*/
+  opacity : 0;
+  transition: opacity 2s;
+}
+ 
+.fade.view{
+  opacity: 1;
+}
+
+@mixin heading/*h2見出し*/{
+    font-size: 250%;
+    color: #e51373;
+    border-bottom: 1px solid #333;
+}
+@mixin heading02/*h2見出し*/{
+    font-size: 187%;
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+
+/*ヘッダー*/
+header{
+	width: 100%;
+	background-color: white;
+	& #header_inner{
+		display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-between;
+		margin: 0 auto;
+        height: 160px;
+		& h1{
+			width: 281px;	
+		}
+		& #top_tel{
+            width: 410px;
+            & p{
+                width: 345px;
+                margin: 0 0 0 65px;
+                text-align: right;
+            }
+            & ul{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:space-between;
+                margin: 1em 0 0;
+                & li{
+                    width: 200px;
+                }
+            }
+		}
+	}
+    & #menuList{
+        width: 100%;
+        background-color: #0082e8;
+    }
+}
+/*メイン*/
+#wrap{
+	margin: 0 auto;
+	display: flex;
+    flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content:space-between; 
+	
+	& #side{
+		width: 20%;
+		margin: 0;
+		& .banner-botan{
+			margin: auto;
+			display: block;
+		}
+		
+		& .black-bg{
+			margin: 5% auto;
+			padding: 5% 0 5% 5%;
+			font-size: 120%;
+			font-weight: bold; 
+			color: #fff;
+			background-color: #000;
+		}
+		
+		& .tokui{
+			margin: 0 auto 20%;
+		
+		& .items{
+			margin: 5% auto ;
+			font-weight:bold;
+			display: flex; 
+	        flex-wrap: wrap;
+	        justify-content:space-between; 
+			& figure{
+				width: 10%;
+			}
+			& .inp{
+				width: 80%;
+				margin: 1% auto 0;
+				text-align: left;
+				display: block;
+			} 
+			& .under-items{
+			& a{ 
+				width: 100%;
+				margin: 5% 0 0 30%;
+				color: #000; 
+				display: block;
+				font-weight:normal; 
+				font-size: 80%;
+				}
+			}
+		}
+			}
+		
+		& .black-bg2{
+			margin: 5% auto;
+			padding: 5% 0 5% 5%;
+			font-size: 120%;
+			font-weight: bold; 
+			color: #fff;
+			background-color: #000;
+			border-radius: 5px;
+			display: flex; 
+	        flex-wrap: wrap;
+	        justify-content:space-between; 
+		}
+						& a{
+					color: #fff;
+				    display: block;
+                            text-decoration: none;
+				}
+		& figure{
+			width: 10%;
+			margin: 0 0 0 5%;
+		}
+		& .botan-p2{
+			width: 80%;
+		} 
+		
+	}  
+	& #contents{
+		width: 78%;
+		margin: 1.5em 0 0;
+        & #lineup{
+            margin: 2em 0 0;
+            & h2{
+                 @include heading;
+            }
+            & p{
+                margin: 1em 0 0;
+            }
+            & ul{
+                & li{
+                    margin: 1em 0 0;
+                }
+            }
+        }
+        & #point{
+            margin: 2em 0 0;
+            & h2{
+                 @include heading;
+            }
+            & p{
+                margin: 1em 0 0;
+            }
+            & ol{
+                margin: 1em 0 0;
+                & li{
+                    font-size: 115%;
+                    font-weight: bold;
+                    margin: 1em 0 0 50px;
+                    background-color: #d7b782;
+                    & img{
+                        width: 85.5px;
+                        vertical-align: middle;
+                        margin: 0 0.5em 0 -50px;
+                    }
+                    & p{
+                        margin: 0;
+                        vertical-align: middle;
+                        display: inline-block;
+                    }
+                }
+            }
+            & h3{
+                margin: 3em 0 1em;
+                font-size: 131%;
+                border-bottom: 1px solid #333;
+            }
+            & ul{
+        & li{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between; 
+        &:nth-child(n+2){
+            border-top: 1px dotted #ccc;
+            padding: 1em 0 0;
+            margin: 1em 0 0;
+        }
+        & div{
+            width:200px;
+            display: flex;
+        flex-wrap: wrap;
+            & span{
+                display: block;
+                color: #0082e8;
+                margin: 0 0 0 1rem;
+            }
+            & .news_n a{
+        display: block;
+        width: 60px;
+        text-align: center;
+        font-size: 80%;
+        background-color: #0082e8;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.1rem 1%;
+        font-style: normal;
+        border-radius: 6px;
+        &:hover,&:active{
+            background-color: #0B94FF;
+            text-decoration: none;
+            color: #fff;
+            font-style: normal;
+        }
+    }
+    & .special_n a{
+        display: block;
+        width: 60px;
+        text-align: center;
+        font-size: 80%;
+        background-color: #e51373;
+        color: #fff;
+        text-decoration: none;
+        font-style: normal;
+        padding: 0.1rem 1%;
+        border-radius: 6px;
+        &:hover,&:active{
+            background-color: #EE368A;
+            text-decoration: none;
+            color: #fff;
+            font-style: normal;
+        }
+    }
+        }
+        & a{
+            display: block;
+            width: calc(100% - 200px);
+            color: #333;
+            text-decoration: none;
+            &:hover,&:active{
+                color: #333;
+                text-decoration: underline;
+            }
+        }
+    }
+    }
+            & #info_more a {
+    display: block;
+    width: 200px;
+    margin: 1em auto 0;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1%;
+    font-style: normal;
+    border-radius: 6px;
+                &:hover,&:active{
+                    color: #fff;
+                    text-decoration: none;
+                    background-color: #121212;
+                }
+}
+        }
+        & #product{
+            margin: 2.5em 0 0;
+            & h2{
+                 @include heading;
+            }
+            & p{
+                margin: 1em 0 0;
+                & a{
+                    display: block;
+                    width: 250px;
+                    background-color: #e51373;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: center;
+                    padding: 0.5em 0;
+                    margin: 2em 0 0 auto;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all  0.3s ease;
+                    &:hover,&:active{
+                        color: #fff;
+                        text-decoration: none;
+                        background-color: #EE368A;
+                    }
+                }
+            }
+            & #course{
+                width: 100%;
+                & li{
+                    width: 100%;
+                    & h3{
+                        font-size: 156%;
+                        border-bottom: 1px dotted #ccc;
+                        margin: 2em 0 0.5em;
+                    }
+                    & ul{
+                        width: 100%;
+                        display: flex; 
+                        flex-wrap: wrap;
+                        justify-content:space-between;
+                        &::after {
+                                content: "";
+                            display: block;
+                            width: 31.333%;  /* .boxに指定したwidthと同じ幅を指定する */
+                            height: 0;
+                        }
+                        & li{
+                            width: 31.333%;
+                            & a{
+                                width: 100%;
+                                display: flex; 
+                                flex-wrap: wrap;
+                                justify-content:space-between; 
+                                color: #333;
+                                text-decoration: none;
+                                & dl{
+                                    width: 68%;
+                                    & dt{
+                                        font-style: 156%;
+                                        font-weight: bold;
+                                        & span{
+                                            padding: 0.25em 1%;
+                                            display: block;
+                                            text-align: center;
+                                            font-size: 80%;
+                                            color: #fff;
+                                            background-color: #666;
+                                        }
+                                    }
+                                    & dd{
+                                        font-size: 187%;
+                                        color: #0B94FF;
+                                        font-weight: bold;
+                                    }
+                                }
+                                & figure{
+                                    width: 30%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & #howto{
+            margin: 5em 0 0;
+            & h3{
+                 @include heading02;
+            }
+            & p{
+                margin: 1em 0 0;
+            }
+            & ul{
+                display: flex; 
+                flex-wrap: wrap;
+                justify-content:space-between; 
+                margin: 2em 0 0;
+                & li{
+                    width: 18%;
+                    position: relative;
+                    &:nth-child(n+2)::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: -20px;
+                        margin: auto;
+                        box-sizing: border-box;
+                        width: 15px;
+                        height: 15px;
+                        border: 15px solid transparent;
+                        border-left: 15px solid #666666;
+                    }
+                }
+            }
+            & dl{
+                margin: 3em 0 0;
+                text-align: center;
+                & dt{
+                    font-size: 125%;
+                    font-weight: bold;
+                }
+                & dd{
+                    margin: 1em 0 0;
+                    & img{
+                        width: 275px;
+                        display: block;
+                        margin: 0 auto 1em;
+                    }
+                }
+            }
+        }
+        & #guide{
+             margin: 5em 0 0;
+            & h3{
+                 @include heading02;
+            }
+            & p{
+                margin: 1em 0 0;
+            }
+            & ul{
+                display: flex; 
+                flex-wrap: wrap;
+                justify-content:space-between; 
+                margin: 2em 0 0;
+                & li{
+                    width: 23%;
+                }
+            }
+        }
+	}   
+}
+
+/*フッター*/
+footer{
+	margin: 8em 0 0;
+    background-color: #ccc;
+    padding: 2em 0;
+    color: #333;
+     & a{
+         color: #333;
+         text-decoration: none;
+         &:hover,&:active{
+             color: #0082e8;
+             text-decoration: none;
+         }
+    }
+    & #footer_inner{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-between;
+        & dl{
+            width: 278px;
+            & dt{
+                width: 100%;
+                margin: 0 0 1em;
+            }
+            & dd{
+                width: 100%;
+            }
+        }
+        & nav{
+            width: calc(100% - 300px);
+            & #f_menu01{
+                width: 100%;
+                 display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                padding: 0 0 2em;
+                & li{
+                   padding: 0 2%;
+                   margin: 0.5em 0 0;
+                }
+                border-bottom: 1px solid #fff;
+            }& #f_menu02{
+                width: 100%;
+                 display: flex;
+                flex-wrap: wrap;
+                & li{
+                   padding: 0 2%;
+                    margin: 1em 0 0;
+                    border-right: 1px solid #333;
+                    &:last-child{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+	& address{
+		width: 96%;
+		text-align: center;
+		font-size: 87.5%;
+		font-style: normal;
+		padding: 0 2%;
+		margin: 5em 0 0;
+	}
+}
+
+/*TOPへ戻るボタン設定*/
+#page-top {
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	font-size: 90%;
+	z-index: 999;
+	font-family: "M PLUS Rounded 1c";
+	font-weight: bold;
+	& a {
+		display: block;
+	text-decoration:none;
+	color: #fff;
+	text-align: center;
+	width: 100px;
+		background-color: #0082e8;
+	padding: 0.5em 0;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+	& a:hover,& a:active {
+		opacity: 0.7;
+		filter: alpha(opacity=70);
+		-moz-opacity:0.7;
+}
+}
+
+	
+		
+
+/*共通設定ここまで-------------------------------------------------------------------------------------------------------------------------------------*/
+/* pc */
+@media screen and (min-width: 1300px)  {
+
+/*ヘッダー*/
+#header_inner{
+	width:1280px;
+}
+	
+/*メイン*/
+.m_sp{
+	display: none;
+	}
+#wrap{
+        width: 1280px;
+}
+/*フッター*/
+footer{
+    & #footer_inner{
+        width: 1280px;
+        & nav{
+            & #f_menu01{
+                justify-content:space-between;
+            }
+        }
+    }
+}
+}
+
+/* tablet以下共通 ------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1299px)  {
+	
+/*ヘッダー*/
+#header_inner{
+	width: 96%;
+}
+	
+/*メイン*/
+#wrap{
+    width: 96%;
+}
+
+/*フッター*/
+#footer_inner{
+        width: 96%;
+    }
+}
+/* tablet以下共通ここまで ------------------------------------------------------------------------------------------*/
+
+/* tablet1 */
+@media only screen and (min-width: 1024px) and (max-width: 1299px)  {
+
+/*基本設定*/
+html{
+	font-size: 16px;
+	}
+
+/*ヘッダー*/
+	
+/*メイン*/
+.m_sp{
+		display: none;
+	}
+/*フッター*/
+}
+
+/* tablet2  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+/*基本設定*/
+html{
+	font-size: 85%;
+	}
+	
+/*ヘッダー*/
+
+/*メイン*/
+.m_pc{
+		display: none;
+	}
+#wrap{
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between; 
+	
+	& #side{
+		width: 20%;
+		margin: 1.5% 0 0;
+		& .banner-botan{
+			margin:0;
+			display: block;
+		}
+		
+		& .black-bg{
+			margin: 5% auto;
+			padding: 5% 0 5% 5%;
+			font-size: 90%;
+			font-weight: bold; 
+			color: #fff;
+			background-color: #000;
+		}
+		
+		& .tokui{
+			margin: 0 auto 20%;
+		
+		& .items{
+			margin: 5% auto ; 
+			font-size: 70%;
+			display: flex; 
+	        flex-wrap: wrap;
+	        justify-content:space-between; 
+			& figure{
+				width: 10%;
+			}
+			& .inp{
+				width: 80%;
+				margin: 1% auto 0;
+				text-align: left;
+				display: block;
+			}
+			& .under-items{
+			& a{
+				margin: 2% 0 0 20%;
+				}
+			}
+		}
+			}
+		
+		& .black-bg2{
+			margin: 5% auto;
+			padding: 5% 0 5% 5%;
+			font-size: 90%;
+			font-weight: bold; 
+			color: #fff;
+			background-color: #000;
+			border-radius: 5px;
+			display: flex; 
+	        flex-wrap: wrap;
+	        justify-content:space-between; 
+		}
+						& a{
+					color: #fff;
+				    display: block;
+				}
+		& figure{
+			width: 10%;
+			margin: 0 0 0 5%;
+		}
+		& .botan-p2{
+			width: 80%;
+		} 
+		
+	}  
+	& #contents{
+		width: 75%;
+		margin: 1.5% 0 0;
+        & #point{
+            & ul{
+                & li{
+                    & span{
+                        display: block;
+                    }
+                }
+            }
+        }
+        & #howto{
+            & ul{
+                & li{
+                    &:nth-child(n+2)::before{
+                        left: -12px;
+                        width: 10px;
+                        height: 10px;
+                        border: 10px solid transparent;
+                        border-left: 10px solid #666666;
+                    }
+                }
+            }
+        } 
+    }   
+}
+/*フッター*/
+}
+
+/* tablet3  */
+@media only screen and (max-width: 767px) {
+
+/*基本設定*/
+html{
+	font-size: 85%;
+	}
+@mixin heading/*h2見出し*/{
+    font-size: 160%;
+}
+@mixin heading02/*h2見出し*/{
+    font-size: 130%;
+}
+    
+/*ヘッダー*/
+.m_pc{
+	display: none;
+}
+header{
+	& #header_inner{
+		flex-direction: column;
+		margin: 0 auto;
+        height:inherit;
+		& h1{
+			width: 100%;	
+            margin: 0;
+		}
+		& #top_tel{
+            width: 100%;
+            margin: 0 0 1em;
+            & p{
+                width: 100%;
+                margin: 0;
+                text-align: right;
+            }
+            & ul{
+                width: 100%;
+                margin: 1em 0 0;
+                & li{
+                    width: 48%;
+                }
+            }
+		}
+	}
+}
+
+/*メイン*/
+#wrap{
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between; 
+	
+	& #side{
+		width: 20%;
+		margin: 1.5% auto 0;
+		& .banner-botan{
+			margin:0;
+			display: block;
+		}
+		
+		& .black-bg{
+			margin: 5% auto;
+			padding: 5% 0 5% 5%;
+			font-size: 90%;
+			font-weight: bold; 
+			color: #fff;
+			background-color: #000;
+		}
+		
+		& .tokui{
+			margin: 0 auto 20%;
+		
+		& .items{
+			margin: 5% auto ; 
+			font-size: 70%;
+			display: flex; 
+	        flex-wrap: wrap;
+	        justify-content:space-between; 
+			& figure{
+				width: 10%;
+			}
+			& .inp{
+				width: 80%;
+				margin: 1% auto 0;
+				text-align: left;
+				display: block;
+			}
+			& .under-items{
+			& a{
+				margin: 2% 0 0 10%;
+				font-size: 30%;
+				}
+			}
+		}
+			}
+		
+		& .black-bg2{
+			margin: 5% auto;
+			padding: 5% 0 5% 5%;
+			font-size: 90%;
+			font-weight: bold; 
+			color: #fff;
+			background-color: #000;
+			border-radius: 5px;
+			display: flex; 
+	        flex-wrap: wrap;
+	        justify-content:space-between; 
+		}
+						& a{
+					color: #fff;
+				    display: block;
+				}
+		& figure{
+			width: 10%;
+			margin: 0 0 0 5%;
+		}
+		& .botan-p2{
+			width: 80%;
+		} 
+		
+	}  
+	& #contents{
+		width: 75%;
+		margin: 1.5% 2% 0 ;
+        & #lineup{
+            & h2{
+                 @include heading;
+            }
+        }
+        & #point{
+            margin: 2em 0 0;
+            & h2{
+                 @include heading;
+            }
+            & ol{
+                & li{
+                    font-size: 110%;
+                    margin: 1em 0 0 50px;
+                    display: flex; 
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content:space-between; 
+                    & img{
+                        width: 85.5px;
+                        vertical-align: middle;
+                        margin: 0 0.5em 0 -50px;
+                    }
+                    & p{
+                        margin: 0 0.25em 0 0;
+                        width: calc(100% - 50px);
+                    }
+                }
+            }
+            & h3{
+                margin: 1.5em 0 0.5em;
+                font-size: 115%;
+            }
+            & ul{
+        & li{
+        flex-direction: column;
+        & a{
+            width: 100%;
+        }
+    }
+    }
+        }
+        & #product{
+            margin: 2.5em 0 0;
+            & h2{
+                 @include heading;
+            }
+            & p{
+                margin: 1em 0 0;
+                & a{
+                    width: 200px;
+                    margin: 1em auto 0;
+                }
+            }
+            & #course{
+                & li{
+                    & h3{
+                        font-size: 130%;
+                    }
+                    & ul{
+                        flex-direction: column;
+                        &::after {
+                            width: 100%;  /* .boxに指定したwidthと同じ幅を指定する */
+                        }
+                        & li{
+                            width: 100%;
+                            &:nth-child(n+2){
+                                margin: 1em 0 0;
+                            }
+                            & a{
+                                width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        }
+        & #howto{
+            margin: 2.5em 0 0;
+            & h3{
+                 @include heading02;
+            }
+            & ul{
+                display: flex; 
+                flex-wrap: wrap;
+                justify-content:space-between; 
+                margin: 2em 0 0;
+                & li{
+                    width: 46%;
+                    position: relative;
+                    &:nth-child(even)::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: -14px;
+                        margin: auto;
+                        box-sizing: border-box;
+                        width: 10px;
+                        height: 10px;
+                        border: 10px solid transparent;
+                        border-left: 10px solid #666666;
+                    }
+                     &:nth-child(odd)::before{
+                        display: none;
+                    }
+                    &:nth-child(n+3){
+                        margin: 1em 0 0;
+                    }
+                }
+            }
+            & dl{
+                margin: 1.5em 0 0;
+                & dt{
+                    font-size: 110%;
+                }
+                & dd{
+                    margin: 1em 0 0;
+                }
+            }
+        }
+        & #guide{
+             margin: 2.5em 0 0;
+            & h3{
+                 @include heading02;
+            }
+            & ul{
+                display: flex; 
+                flex-wrap: wrap;
+                justify-content:space-between; 
+                margin: 1em 0 0;
+                & li{
+                    width: 48%;
+                    &:nth-child(n+3){
+                        margin: 1em 0 0;
+                    }
+                }
+            }
+        }
+    }   
+}
+	
+/*フッター*/
+footer{
+	margin: 4em 0 0;
+    padding: 1em 0;
+    & #footer_inner{
+        flex-direction: column;
+        & dl{
+            width: 80%;
+            margin: 0 auto 1em;
+        }
+        & nav{
+            width: 100%;
+            & #f_menu01{
+                & li{
+                   padding: 0 2%;
+                   margin: 0.5em 0 0;
+                }
+                border-bottom: 1px solid #fff;
+            }& #f_menu02{
+                width: 100%;
+                 display: flex;
+                flex-wrap: wrap;
+                & li{
+                   padding: 0 2%;
+                    margin: 1em 0 0;
+                    border-right: 1px solid #333;
+                    &:last-child{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+	& address{
+		width: 96%;
+		text-align: center;
+		font-size: 87.5%;
+		font-style: normal;
+		padding: 0 2%;
+		margin: 5em 0 0;
+	}
+}
+
+	}
+
+/* smartPhone1 */
+@media only screen and (max-width: 499px) {
+/*基本設定*/
+html{
+	font-size: 80%;
+	}
+	
+/*ヘッダー*/
+
+
+/*メイン*/
+#wrap{
+	width: 96%;
+	margin: 2 auto;
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content:space-between; 
+	flex-direction: column;
+	& #side{
+		width: 100%;
+		margin: 5% 0;
+		display: flex; 
+		flex-wrap: wrap;
+	    justify-content:space-between;
+		& #banner{
+			width: 100%;
+			margin: 0;
+			display: flex; 
+		    flex-wrap: wrap;
+	        justify-content:space-between;
+		
+		
+		 
+		& .banner-botan{  
+			width: 30%;
+			margin: 0 auto;
+			
+	       
+		}
+	}
+		
+		& #tokuilist{
+			width: 40%;
+			margin: 5% 15% 0 4%;
+		
+		
+		& .black-bg{
+			margin: 0 auto; 
+			padding: 5% 0 5% 5%;
+			font-size: 3%;
+			font-weight: bold; 
+			color: #fff;
+			background-color: #000;
+		}
+		
+		& .tokui{
+			margin: 0 auto;
+		
+		& .items{
+			margin: 5% auto ; 
+			font-size: 30%;
+			display: flex; 
+	        flex-wrap: wrap;
+	        justify-content:space-between; 
+			& figure{
+				width: 10%;
+			}
+			& .inp{
+				width: 80%;
+				margin: 1% auto 0;
+				text-align: left;
+				display: block;
+			} 
+		}
+			}
+			}
+		
+		
+		& #page-botan{
+			width: 30%;
+		    margin: 5% 4% 0 0%;
+		
+		& .black-bg2{
+			padding: 5% 20% 5% 0;
+			font-size: 90%; 
+			font-weight: bold; 
+			color: #fff;
+			background-color: #000;
+			border-radius: 5px;
+			display: flex; 
+	        flex-wrap: wrap;
+	        justify-content:space-between; 
+		}
+						& a{
+					color: #fff;
+				    display: block;
+				}
+		& figure{
+			width: 10%;
+			margin: 0 0 0 5%;
+		}
+		& .botan-p2{
+			width: 80%;
+		} 
+		
+	}  
+		}
+	& #contents{
+		width: 96%;
+		margin: 5% auto;
+	
+	}   
+}
+
+/*フッター*/
+
+}

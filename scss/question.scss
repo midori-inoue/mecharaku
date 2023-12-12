@@ -1,0 +1,131 @@
+@charset "utf-8";
+@import url("base.css");
+@import url("../contact_form/mfp.statics/mailformpro.css");
+
+
+
+/*共通設定-------------------------------------------------------------------------------------------------------------------------------------*/
+/*基本設定*/
+h1{ 
+    font-size: 250%;
+    color: #e51373;
+    border-bottom: 1px solid #333;
+}
+.question_p{
+    margin: 1em 0 0;
+}
+
+/*アコーディオン全体*/
+.accordion-area{
+	margin: 3em auto 0;
+    list-style: none;
+    & li{
+        margin: 10px 0;
+        & section{
+            border: 1px solid #ccc;
+            & .title {
+                position: relative;/*+マークの位置基準とするためrelative指定*/
+                cursor: pointer;
+                font-size:1rem;
+                font-weight: normal;
+                padding: 3% 3% 3% 88px;
+                transition: all .5s ease;
+                background-image: url("../img/question/q.png");
+                background-size: 33px auto;
+                background-repeat: no-repeat;
+                background-position: 50px center;
+                &::before,&::after{
+                    position: absolute;
+                    content:'';
+                    width: 15px;
+                    height: 2px;
+                    background-color: #333;
+                }
+                &::before{
+                    top:48%;
+                    left: 15px;
+                    transform: rotate(0deg);
+                }
+                &::after{
+                    top:48%;
+                    left: 15px;
+                    transform: rotate(90deg);
+                }
+                & .close::before{
+                    transform: rotate(45deg);
+                }
+                & .close::after{
+                    transform: rotate(-45deg);
+                }
+            }
+            & .box {
+                display: none;/*はじめは非表示*/
+                background: #f3f3f3;
+                margin:0 3% 3% 3%;
+                padding: 3%;
+            }
+        }
+    }
+}
+
+
+/*共通設定ここまで-------------------------------------------------------------------------------------------------------------------------------------*/
+/* pc */
+@media screen and (min-width: 1300px)  {
+
+/*メイン*/
+.m_sp{
+	display: none;
+	}
+#question{
+		width: 1280px;
+}
+}
+
+/* tablet以下共通 ------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1299px)  {
+	
+/*メイン*/
+#question{
+		width: 96%;
+}
+}
+/* tablet以下共通ここまで ------------------------------------------------------------------------------------------*/
+
+/* tablet1 */
+@media only screen and (min-width: 1024px) and (max-width: 1299px)  {
+
+/*メイン*/
+
+}
+
+/* tablet2  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+/*基本設定*/
+/*メイン*/
+
+}
+
+/* tablet3  */
+@media only screen and (max-width: 767px) {
+
+/*基本設定*/
+/*メイン*/
+h1{ 
+    font-size: 187%;
+    }
+#question{
+	& figure{
+		width: 80%;
+	}
+}
+}
+
+/* smartPhone1 */
+@media only screen and (max-width: 499px) {
+/*基本設定*/
+/*メイン*/
+
+}
+

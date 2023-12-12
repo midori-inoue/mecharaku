@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<title>トップページ | めちゃ楽PRINT</title>
+<link href="css/top.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+<div id="header_inner">
+<h1><a href="index.html"><img src="img/base/top_logo.png" width="562" height="302" alt="めちゃ楽PRINT　「困った」をなんとかする印刷サイト　最短出荷3営業日"/></a></h1>
+<div  id="top_tel">
+<p><a href="tel:0792613338"><img src="img/base/tel.png" alt="079-261-3338"/></a>10:00～18:00（定休日：土日祝）</p>
+<ul><li><a href="index.html"><img src="img/base/mypage01.png" alt="マイページはこちら"/></a></li><li><a href="index.html"><img src="img/base/cart01.png" alt="カートはこちら"/></a></li></ul>
+</div>
+</div>
+<nav id="menuList"><ul><li><a href="index.html">お見積もり/ご注文</a></li><li><a href="prints.html">商品一覧</a></li><li><a href="guide.html">ご利用ガイド</a></li><li><a href="contact.html">よくある質問</a></li><li><a href="draft.html">データ入稿・再入稿</a></li><li><a href="contact.html">お問い合わせ</a></li></ul></nav><!-- /#menuList -->
+<div id="sp"></div>
+</header>
+	
+<main>
+<div class="swiper">
+   <div class="swiper-wrapper">
+     <div class="swiper-slide"><span class="m_pc"><img src="img/top/top01.jpg"></span><span class="m_sp"><img src="img/top/top01.jpg"></span></div>
+     <div class="swiper-slide"><span class="m_pc"><img src="img/top/top02.jpg"></span><span class="m_sp"><img src="img/top/top02.jpg"></span></div>
+       <div class="swiper-slide"><span class="m_pc"><img src="img/top/top03.jpg"></span><span class="m_sp"><img src="img/top/top03.jpg"></span></div>
+   </div>
+   <div class="swiper-button-prev"></div>
+   <div class="swiper-button-next"></div>
+    <!-- ページネーション -->
+	<div class="swiper-pagination"></div>
+</div>
+</main>
+
+<footer>
+<div id="footer_inner">
+<dl><dt><img src="img/base/logo.png" alt="めちゃ楽PRINT"/></dt><dd>富士高速印刷株式会社<br>兵庫県姫路市林田町上伊勢962-3<br>TEL：<a href="tel:0792613338">079-261-3338</a></dd></dl>
+<nav><ul id="f_menu01"><li><a href="index.html">お見積もり/ご注文</a></li><li><a href="prints.html">商品一覧</a></li><li><a href="guide.html">ご利用ガイド</a></li><li><a href="contact.html">よくある質問</a></li><li><a href="draft.html">データ入稿・再入稿</a></li><li><a href="contact.html">お問い合わせ</a></li></ul>
+<ul id="f_menu02"><li><a href="index.html">運営会社について</a></li><li><a href="index.html">採用情報</a></li><li><a href="index.html">利用規約</a></li><li><a href="index.html">特定取引法に基づく表記</a></li><li><a href="index.html">個人情報保護方針</a></li><li><a href="index.html">個人情報の取り扱い</a></li><li><a href="index.html">情報セキュリティ基本方針</a></li><li><a href="index.html">他社商標</a></li><li><a href="index.html">ESGの取り組み</a></li></ul></nav>
+</div>
+<address><small>© <script type="text/javascript">$y=2023;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> Mecyaraku print. All Rights Reserved.</small></address>
+</footer>
+<p id="page-top"><img src="img/base/gotop.png" alt=""/><a href="#wrap">▲TOP</a></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/anchor_link.js"></script>
+<script src="js/fade.js"></script>
+<script src="js/m_menu.js"></script>
+<script src="js/pagetop.js"></script>
+<script src="js/sp_touch.js"></script>
+<script src="js/swiper-bundle.min.js"></script>  
+<script>
+	window.onload = function() {
+		//スライダー1つ目
+		var swiperMain01 = new Swiper ('.swiper', {
+			loop: true,
+  direction:'vertical',
+          direction:'horizontal',
+          navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+          autoplay: {
+    delay: 5000,
+  },
+          pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
+	}
+		});
+		//スライダー2つ目
+		var swiperMain02 = new Swiper ('.swiper02', {
+            slidesPerView:3.2,
+            breakpoints: {
+    // 768px以上の場合
+    768: {
+      slidesPerView:4.2,
+    },
+    // 980px以上の場合
+    980: {
+      slidesPerView:5.2,
+    },
+    // 1200px以上の場合
+    1200: {
+      slidesPerView:7.2,
+    }
+  },
+            centeredSlides:true,
+            spaceBetween: 20,//何ピクセル画像の間隔をあけるか
+		//自動再生する場合
+		autoplay: {
+		delay: 3000, //3秒後に次の画像に代わる
+		},
+		loop: true,//最後の画像までいったらループする
+      navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+      }
+		});
+	}
+    </script>
+</body>
+</html>

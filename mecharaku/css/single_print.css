@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import url("base.css");
+/*共通設定-------------------------------------------------------------------------------------------------------------------------------------*/
+/*基本設定*/
+/*ヘッダー*/
+/*メイン*/
+#single_top {
+  font-size: 250%;
+  color: #e51373;
+  border-bottom: 1px solid #333;
+  font-weight: bold; }
+
+#contents p {
+  margin: 1em 0 0; }
+
+#single {
+  margin: 2em 0 0; }
+  #single h1 {
+    font-size: 131%;
+    border-bottom: 1px dotted #ccc;
+    margin: 0 0 1em; }
+  #single p {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /*& span{
+        color: #0082e8;
+    }*/ }
+    #single p i a {
+      background-color: #666;
+      color: #fff;
+      padding: 0.25em 1%;
+      margin: 0 0 0.25em;
+      width: 100px;
+      font-style: normal;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 50%;
+      font-weight: normal;
+      margin: 0 0 0 1em; }
+      #single p i a:hover, #single p i a:active {
+        background-color: #ccc;
+        color: #fff;
+        text-decoration: none; }
+    #single p .slip a {
+      color: #333;
+      background-color: #eee326; }
+      #single p .slip a:hover, #single p .slip a:active {
+        color: #333;
+        background-color: #F2EB64;
+        text-decoration: none; }
+    #single p .envelope a {
+      color: #fff;
+      background-color: #d41e6d; }
+      #single p .envelope a:hover, #single p .envelope a:active {
+        color: #fff;
+        background-color: #E44187;
+        text-decoration: none; }
+    #single p .booklet a {
+      color: #fff;
+      background-color: #07569f; }
+      #single p .booklet a:hover, #single p .booklet a:active {
+        color: #fff;
+        background-color: #0868C0;
+        text-decoration: none; }
+  #single figure {
+    margin: 0 0 1em; }
+  #single p {
+    margin: 0 0 1em; 
+    line-height: 2.2; }
+  #single a {
+    display: block;
+    color: #0082e8;
+    text-decoration: none; }
+    #single a:hover, #single a:active {
+      color: #1196FF;
+      text-decoration: none; }
+  #single .price {
+    display: block;
+    margin: 1em 0;
+    color: #FF0000 !important;
+    font-weight: bold; }
+    #single .price i {
+      font-style: normal;
+      vertical-align: middle; }
+    #single .price span {
+      font-size: 150%;
+      color: #FF0000 !important;
+      vertical-align: middle; }
+
+/*ページャーcss*/
+#blog_more {
+  border-top: 1px solid #ccc;
+  padding: 1em 0 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 5em auto 0; }
+
+#blog_more li a {
+  color: #fff;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #0082e8;
+  border-radius: 10px;
+  padding: 0.5em 0;
+  width: 80px;
+  display: block;
+  text-align: center; }
+
+#blog_more li a:hover, #blog_more li a:active {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0691FF;
+  border-radius: 10px;
+  padding: 0.5em 0; }
+
+/*フッター*/
+/*共通設定ここまで-------------------------------------------------------------------------------------------------------------------------------------*/
+/* pc */
+@media screen and (min-width: 1300px) {
+  /*ヘッダー*/
+  /*メイン*/
+  /*フッター*/ }
+/* tablet1 */
+@media only screen and (min-width: 1024px) and (max-width: 1299px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  /*フッター*/ }
+/* tablet2  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  /*ページャー*/
+  .pager ul li span,
+  .pager ul li a {
+    display: block;
+    padding: 0.6em 1em;
+    box-sizing: border-box; }
+
+  .pager ul li:nth-child(1) a, .pager ul li:last-child a {
+    padding: 0.6em 0;
+    width: 70px;
+    text-align: center; }
+
+  /*フッター*/ }
+/* tablet3  */
+@media only screen and (max-width: 767px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  #single_top {
+    font-size: 187%; }
+
+  #single h1 {
+    font-size: 120%; }
+
+  /*フッター*/ }
+/* smartPhone1 */
+@media only screen and (max-width: 499px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  /*フッター*/ }

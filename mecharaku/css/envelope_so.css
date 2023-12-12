@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url("base.css");
+@import url("../so_form/mfp.statics/mailformpro.css");
+/*共通設定-------------------------------------------------------------------------------------------------------------------------------------*/
+/*基本設定*/
+/*ヘッダー*/
+/*メイン*/
+h1 {
+  font-size: 250%;
+  color: #e51373;
+  border-bottom: 1px solid #333; }
+
+#main {
+  margin: 2% auto 5%; }
+
+#flow {
+  width: 100%;
+  margin: 5% 30% 5% 0; }
+  #flow h2 {
+    width: 80%;
+    margin: 0 2% 0 0;
+    font-size: 130%;
+    font-weight: bold;
+    border-bottom: dotted #000 1px; }
+  #flow #nambers {
+    margin: 5% 0 5% 0; }
+    #flow #nambers .guide {
+      margin: 0 0 0 7%;
+      color: #0082E8; }
+
+#mailformpro {
+  width: 96%;
+  margin: 3em auto 0; }
+  #mailformpro h2 {
+    width: 80%;
+    margin: 0 2% 0 0;
+    font-size: 130%;
+    font-weight: bold;
+    border-bottom: dotted #000 1px; }
+
+.inp01 {
+  width: 25% !important; }
+
+.inp02 {
+  width: 35% !important; }
+
+.inp03 {
+  width: 60% !important; }
+
+/*フッター*/
+/*共通設定ここまで-------------------------------------------------------------------------------------------------------------------------------------*/
+/* pc */
+@media screen and (min-width: 1300px) {
+  /*ヘッダー*/
+  /*メイン*/
+  /*フッター*/ }
+/* tablet以下共通 ------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1299px) {
+  /*ヘッダー*/
+  /*メイン*/
+  /*フッター*/ }
+/* tablet以下共通ここまで ------------------------------------------------------------------------------------------*/
+/* tablet1 */
+@media only screen and (min-width: 1024px) and (max-width: 1299px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  #main {
+    margin: 2% auto 10%; }
+
+  /*フッター*/ }
+/* tablet2  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  #main {
+    margin: 2% auto 10%; }
+
+  .inp01 {
+    width: 25% !important; }
+
+  .inp02 {
+    width: 65% !important; }
+
+  .inp03 {
+    width: 80% !important; }
+
+  /*フッター*/ }
+/* tablet3  */
+@media only screen and (max-width: 767px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  h1 {
+    font-size: 187%; }
+
+  #main {
+    margin: 2% auto; }
+
+  .inp01 {
+    width: 32% !important; }
+
+  .inp02 {
+    width: 75% !important; }
+
+  .inp03 {
+    width: 100% !important; }
+
+  /*フッター*/ }
+/* smartPhone1 */
+@media only screen and (max-width: 499px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  h1 {
+    font-size: 280%;
+    line-height: 100%; }
+
+  #main {
+    margin: 3% auto; }
+
+  /*フッター*/ }

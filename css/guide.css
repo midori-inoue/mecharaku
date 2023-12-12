@@ -1,0 +1,417 @@
+@charset "UTF-8";
+@import url("base.css");
+/*共通設定-------------------------------------------------------------------------------------------------------------------------------------*/
+/*基本設定*/
+/*ヘッダー*/
+/*メイン*/
+h1 {
+  font-size: 250%;
+  color: #e51373;
+  border-bottom: 1px solid #333; }
+
+#contents p {
+  margin: 1em 0 0; }
+
+#point {
+  background-color: #f4f4f4;
+  padding: 1em 2%;
+  margin: 2em 0 0; }
+  #point h2 {
+    color: #333;
+    font-size: 187%;
+    border-bottom: 1px dotted #333;
+    margin: 0 0 0.5em; }
+  #point ol {
+    margin: 1em 0 0; }
+    #point ol li span {
+      background-color: #333;
+      color: #fff;
+      font-weight: bold;
+      padding: 0.25em 5px;
+      margin: 0 10px 0 0; }
+    #point ol li i {
+      color: #e51373;
+      font-weight: bold;
+      font-style: normal; }
+    #point ol li:nth-child(n+2) {
+      margin: 1em 0 0; }
+  #point figure {
+    margin: 1em 0 0; }
+  #point .point_bottom {
+    margin: 1em 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+    #point .point_bottom .point_botom_inner {
+      width: calc(96% - 300px);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #333;
+      padding: 1em 2%; }
+      #point .point_bottom .point_botom_inner figure {
+        margin: 0;
+        width: 31.333%; }
+    #point .point_bottom dl {
+      width: 275px;
+      position: relative;
+      display: inline-block;
+      margin: 0 0 0 15px;
+      color: #555;
+      text-align: center;
+      font-size: 16px;
+      background: #333; }
+      #point .point_bottom dl::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -30px;
+        margin-top: -15px;
+        border: 15px solid transparent;
+        border-right: 15px solid #333; }
+      #point .point_bottom dl dt {
+        font-size: 150%;
+        color: #fff;
+        font-weight: bold;
+        background-color: #e51373;
+        padding: 0.5em 0; }
+      #point .point_bottom dl dd {
+        padding: 1em 2%;
+        color: #fff;
+        font-size: 110%; }
+
+#course {
+  margin: 3em 0 0; }
+  #course .course_top {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    #course .course_top .course_right {
+      width: 48%; }
+      #course .course_top .course_right h2 {
+        font-size: 187%;
+        color: #333; }
+        #course .course_top .course_right h2 span {
+          color: #e51373; }
+      #course .course_top .course_right ul {
+        background-color: #f4f4f4;
+        padding: 1em 2% 1em 2em;
+        margin: 1em 0 0; }
+        #course .course_top .course_right ul li {
+          list-style: disc;
+          list-style-position: outside; }
+          #course .course_top .course_right ul li:nth-child(n+2) {
+            margin: 1em 0 0; }
+          #course .course_top .course_right ul li span {
+            color: #e51373;
+            font-weight: bold; }
+      #course .course_top .course_right p {
+        margin: 1em 0 0;
+        font-weight: bold; }
+    #course .course_top .course_left {
+      width: 48%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #course .course_top .course_left figure {
+        width: 48%; }
+        #course .course_top .course_left figure:nth-child(n+3) {
+          margin: 1em 0 0; }
+  #course #course_inner {
+    margin: 3em 0 0; }
+    #course #course_inner li:nth-child(n+2) {
+      margin: 4em 0 0;
+      padding: 4em 0 0;
+      border-top: 1px dotted #ccc; }
+    #course #course_inner li .plan {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #course #course_inner li .plan .plan_inner {
+        width: 76%; }
+        #course #course_inner li .plan .plan_inner h2 {
+          font-size: 187%;
+          background-color: #e51373;
+          color: #fff;
+          padding: 0.25em 2%; }
+        #course #course_inner li .plan .plan_inner p {
+          margin: 0.5em 0 0; }
+        #course #course_inner li .plan .plan_inner .btns {
+          margin: 2em 0 0;
+          display: flex;
+          flex-wrap: wrap; }
+          #course #course_inner li .plan .plan_inner .btns a {
+            display: block;
+            margin: 0 1%;
+            background-color: #0182e8;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 2%;
+            text-align: center; }
+            #course #course_inner li .plan .plan_inner .btns a:hover, #course #course_inner li .plan .plan_inner .btns a:active {
+              color: #fff;
+              text-decoration: none;
+              background-color: #219CFE; }
+      #course #course_inner li .plan .inner_right {
+        width: 20%; }
+    #course #course_inner li ol {
+      width: 100%;
+      margin: 2em 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #course #course_inner li ol li {
+        width: 23%; }
+        #course #course_inner li ol li:nth-child(n+2) {
+          margin: 0;
+          padding: 0;
+          border-top: none; }
+
+#payment {
+  width: 100%;
+  margin: 5em 0 0; }
+  #payment h2 {
+    font-size: 250%;
+    color: #e51373;
+    border-bottom: 1px solid #333; }
+  #payment ul li {
+    margin: 2em 0 0; }
+    #payment ul li h3 {
+      color: #333;
+      font-size: 187%;
+      border-bottom: 1px dotted #333;
+      margin: 0 0 0.5em; }
+    #payment ul li dl {
+      margin: 1em 0 0;
+      width: 50%;
+      border: 1px solid #999; }
+      #payment ul li dl dt {
+        font-weight: bold;
+        padding: 0.5em 2%;
+        background-color: #f4f4f4; }
+      #payment ul li dl dd {
+        padding: 0.5em 2%; }
+    #payment ul li figure {
+      margin: 1em 0 0; }
+    #payment ul li table {
+      width: 400px;
+      margin: 1em 0 0;
+      border: 1px solid #999; }
+      #payment ul li table th {
+        width: 46%;
+        border: 1px solid #999;
+        padding: 0.5em 2%;
+        background-color: #f4f4f4; }
+      #payment ul li table td {
+        width: 46%;
+        border: 1px solid #999;
+        padding: 0.5em 2%; }
+    #payment ul li:nth-child(2) figure {
+      width: 50%; }
+    #payment ul li:nth-child(4) figure {
+      width: 468px; }
+
+/*フッター*/
+/*共通設定ここまで-------------------------------------------------------------------------------------------------------------------------------------*/
+/* pc */
+@media screen and (min-width: 1300px) {
+  /*ヘッダー*/
+  /*メイン*/
+  /*フッター*/ }
+/* tablet以下共通 ------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1299px) {
+  /*ヘッダー*/
+  /*メイン*/
+  /*フッター*/ }
+/* tablet以下共通ここまで ------------------------------------------------------------------------------------------*/
+/* sp以下共通 ------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  /*ヘッダー*/
+  /*メイン*/
+  #payment {
+    margin: 2.5em 0 0; }
+    #payment h2 {
+      font-size: 187%; }
+    #payment ul li {
+      margin: 2em 0 0; }
+      #payment ul li h3 {
+        font-size: 160%; }
+      #payment ul li dl {
+        width: 80%; }
+      #payment ul li table {
+        width: 80%; }
+      #payment ul li:nth-child(2) figure {
+        width: 80%; }
+      #payment ul li:nth-child(4) figure {
+        width: 80%; }
+
+  /*フッター*/ }
+/* sp以下共通ここまで ------------------------------------------------------------------------------------------*/
+/* tablet1 */
+@media only screen and (min-width: 1024px) and (max-width: 1299px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  /*フッター*/ }
+/* tablet2  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  #point .point_bottom {
+    flex-direction: column; }
+    #point .point_bottom .point_botom_inner {
+      width: 96%; }
+    #point .point_bottom dl {
+      width: 100%;
+      position: relative;
+      display: inline-block;
+      margin: 0;
+      color: #555;
+      text-align: center;
+      font-size: 16px;
+      background: #333; }
+      #point .point_bottom dl::before {
+        content: "";
+        position: static;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        border: none;
+        border-right: none; }
+
+  #course {
+    margin: 3em 0 0; }
+    #course .course_top {
+      flex-direction: column; }
+      #course .course_top .course_right {
+        width: 100%; }
+        #course .course_top .course_right h2 {
+          font-size: 187%;
+          color: #333; }
+          #course .course_top .course_right h2 span {
+            color: #e51373; }
+        #course .course_top .course_right ul {
+          background-color: #f4f4f4;
+          padding: 1em 2% 1em 2em;
+          margin: 1em 0 0; }
+          #course .course_top .course_right ul li {
+            list-style: disc;
+            list-style-position: outside; }
+            #course .course_top .course_right ul li:nth-child(n+2) {
+              margin: 1em 0 0; }
+            #course .course_top .course_right ul li span {
+              color: #e51373;
+              font-weight: bold; }
+        #course .course_top .course_right p {
+          margin: 1em 0 0;
+          font-weight: bold; }
+      #course .course_top .course_left {
+        width: 100%;
+        margin: 1em 0 0; }
+        #course .course_top .course_left figure {
+          width: 23%; }
+          #course .course_top .course_left figure:nth-child(n+3) {
+            margin: 0; }
+    #course #course_inner {
+      margin: 3em 0 0; }
+      #course #course_inner li:nth-child(n+2) {
+        margin: 2em 0 0;
+        padding: 2em 0 0;
+        border-top: 1px dotted #ccc; }
+      #course #course_inner li .plan {
+        flex-direction: column; }
+        #course #course_inner li .plan .plan_inner {
+          width: 100%; }
+        #course #course_inner li .plan .inner_right {
+          width: 0%;
+          display: none; }
+
+  /*フッター*/ }
+/* smartPhone1 */
+@media only screen and (max-width: 767px) {
+  /*基本設定*/
+  /*ヘッダー*/
+  /*メイン*/
+  h1 {
+    font-size: 187%; }
+
+  #point {
+    margin: 1em 0 0; }
+    #point h2 {
+      color: #333;
+      font-size: 160%; }
+    #point .point_bottom {
+      flex-direction: column; }
+      #point .point_bottom .point_botom_inner {
+        width: 96%; }
+      #point .point_bottom dl {
+        width: 100%;
+        margin: 0; }
+        #point .point_bottom dl::before {
+          content: "";
+          position: static;
+          top: 0;
+          left: 0;
+          margin-top: 0;
+          border: none;
+          border-right: none; }
+        #point .point_bottom dl dt {
+          font-size: 130%; }
+        #point .point_bottom dl dd {
+          padding: 1em 2%;
+          color: #fff;
+          font-size: 110%; }
+
+  #course {
+    margin: 1.5em 0 0; }
+    #course .course_top {
+      flex-direction: column; }
+      #course .course_top .course_right {
+        width: 100%; }
+        #course .course_top .course_right h2 {
+          font-size: 160%; }
+      #course .course_top .course_left {
+        width: 100%;
+        margin: 1em 0 0; }
+    #course #course_inner {
+      margin: 1.5em 0 0; }
+      #course #course_inner li:nth-child(n+2) {
+        margin: 2em 0 0;
+        padding: 2em 0 0; }
+      #course #course_inner li .plan {
+        flex-direction: column; }
+        #course #course_inner li .plan .plan_inner {
+          width: 100%; }
+          #course #course_inner li .plan .plan_inner h2 {
+            font-size: 160%;
+            background-color: #e51373;
+            color: #fff;
+            padding: 0.25em 2%; }
+          #course #course_inner li .plan .plan_inner p {
+            margin: 0.5em 0 0; }
+          #course #course_inner li .plan .plan_inner .btns {
+            width: 100%;
+            margin: 1em 0 0;
+            flex-direction: column; }
+            #course #course_inner li .plan .plan_inner .btns a {
+              width: 80%;
+              margin: 0 auto; }
+              #course #course_inner li .plan .plan_inner .btns a:nth-child(n+2) {
+                margin: 1em auto 0; }
+        #course #course_inner li .plan .inner_right {
+          width: 0%;
+          display: none; }
+      #course #course_inner li ol {
+        width: 100%;
+        margin: 1em 0 0; }
+        #course #course_inner li ol li {
+          width: 48%; }
+          #course #course_inner li ol li:nth-child(n+3) {
+            margin: 1em 0 0; }
+
+  /*フッター*/ }
